@@ -14,8 +14,8 @@ body {
 .container {
     border: 1px solid black;
     border-radius: 25px;
-    width: 60vw;
-    height: 80vh;
+    width: 600px;
+    height: 800px;
     background-color: white;
     padding: 20px;
     margin: auto;
@@ -23,6 +23,7 @@ body {
 
 .story-pane {
     background-color: rgb(241, 240, 240);
+    background-image: url(".\Character_PNGs/-uz2cls.jpg");
     border: 1px solid rgb(92, 92, 92);
     border-radius: 15px;
     height: 60%;
@@ -31,8 +32,8 @@ body {
 }
 
 .cropped {
-    width: 150px;
-    height: 150px;
+    width: 500px;
+    height: 400px;
     overflow: hidden;
 }
 
