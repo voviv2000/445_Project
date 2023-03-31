@@ -1,5 +1,7 @@
 const textElement = document.getElementById('text')
+const imageElement = document.getElementById('image')
 const optionButtonsElement = document.getElementById('option-buttons');
+const musicElement = document.getElementById('music')
 
 let state = {}
 
@@ -11,6 +13,7 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
+  imageElement.innerHTML = `<img src="${textNode.image}" alt="${textNode.alt}" /><br />`;
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
@@ -43,7 +46,8 @@ const textNodes = [
   {
     id: 1,
     text: 'You wake up in a strange place and you see a jar of blue goo near you.',
-
+    image: "/Character_PNGs/Edward-Cullen-PNG-HD.png",
+    music: "Music/apep.mp3",
     options: [
       {
         text: 'Take the goo',
@@ -59,7 +63,9 @@ const textNodes = [
   {
     id: 2,
     text: 'You venture forth in search of answers to where you are when you come across a merchant.',
+    image: "/Character_PNGs/tartaglia_genshin_impact_character_render_by_deg5270_deeqrac-pre.png",
     options: [
+      
       {
         text: 'Trade the goo for a sword',
         requiredState: (currentState) => currentState.blueGoo,
