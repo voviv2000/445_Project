@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>High School Murder Mystery</title>
         <link rel="stylesheet" href="style.css">
+        <script defer src="game.js"></script>
     </head>
     <body>
         <h1>High School Murder Mystery</h1>
@@ -11,23 +12,19 @@
             <div class="story-pane">
                 <p>story pane</p>
                 <div class="cropped">
-<<<<<<< Updated upstream
-                    <!-- <p>image here</p> -->
-                    <img src=".\Character_PNGs/1256x1689.png" width="500" style="object-fit: contain;">
-=======
-                    <img src="Character_PNGs/tartaglia_genshin_impact_character_render_by_deg5270_deeqrac-pre.png" width="500" style="object-fit: contain;">
->>>>>>> Stashed changes
+                    <img src="/Character_PNGs/1256x1689.png" width="500" style="object-fit: contain;">
                 </div>
                 <div class="dialogue-pane">
                     <p>dialogue pane</p>
+                    <div id="text">Text</div>
                 </div>
             </div>
             <div class="options-pane">
-                <ul class="options">
-                    <li class="option">Option 1</li>
-                    <li class="option">Option 2</li>
-                    <li class="option">Option 3</li>
-                    <li class="option">Option 4</li>
+                <ul id="option-buttons" class="options">
+                    <button class="option">Option 1</button>
+                    <button class="option">Option 2</button>
+                    <button class="option">Option 3</button>
+                    <button class="option">Option 4</button>
                 </ul>
             </div>
         </div>

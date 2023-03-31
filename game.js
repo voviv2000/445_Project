@@ -42,16 +42,16 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'Just don\'t go dying on me before you lay it all on the line in our own final battle!',
+    text: 'You wake up in a strange place and you see a jar of blue goo near you.',
 
     options: [
       {
-        text: 'Oh I won\'t, I need to find Jungwon',
+        text: 'Take the goo',
         setState: { blueGoo: true },
         nextText: 2
       },
       {
-        text: 'Of course not. Boss Baby will have my head if I do',
+        text: 'Leave the goo',
         nextText: 2
       }
     ]
