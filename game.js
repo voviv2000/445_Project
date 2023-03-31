@@ -2,6 +2,8 @@ const textElement = document.getElementById('text')
 const imageElement = document.getElementById('image')
 const optionButtonsElement = document.getElementById('option-buttons');
 const musicElement = document.getElementById('music')
+const backgroundElement = document.getElementById('background-image')
+
 
 let state = {}
 
@@ -14,6 +16,8 @@ function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
   imageElement.innerHTML = `<img src="${textNode.image}" alt="${textNode.alt}" /><br />`;
+  backgroundElement.innerHTML = `<img src="${textNode.background}" alt="${textNode.alt}" /><br />`;
+
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
@@ -47,6 +51,7 @@ const textNodes = [
     id: 1,
     text: 'You wake up in a strange place and you see a jar of blue goo near you.',
     image: "/Character_PNGs/Edward-Cullen-PNG-HD.png",
+    background: "Background_PNGs/gym.png",
     music: "Music/apep.mp3",
     options: [
       {
