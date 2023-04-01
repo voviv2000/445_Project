@@ -1,5 +1,5 @@
 const textElement = document.getElementById('text')
-const imageElement = document.getElementById('image')
+const imageElement = document.getElementById('character-image')
 const optionButtonsElement = document.getElementById('option-buttons');
 const musicElement = document.getElementById('music')
 const backgroundElement = document.getElementById('background-image')
@@ -15,8 +15,12 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
-  imageElement.innerHTML = `<img src="${textNode.image}" alt="${textNode.alt}" /><br />`;
-  backgroundElement.innerHTML = `<img src="${textNode.background}" alt="${textNode.alt}" /><br />`;
+  
+  var char_img = document.getElementById("character-image");
+  char_img.src = textNode.image;
+  var bkgd_img = document.getElementById("background-image");
+  bkgd_img.src = textNode.background;
+  
 
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
