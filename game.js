@@ -54,8 +54,8 @@ const textNodes = [
   {
     id: 1,
     text: 'You wake up in a strange place and you see a jar of blue goo near you.',
-    image: "/Character_PNGs/Edward-Cullen-PNG-HD.png",
-    background: "Background_PNGs/gym.png",
+    image: "/Character_PNGs/holland.PNG",
+    background: "Background_PNGs/dark_basketball_court.jpg",
     music: "Music/apep.mp3",
     options: [
       {
@@ -72,7 +72,8 @@ const textNodes = [
   {
     id: 2,
     text: 'You venture forth in search of answers to where you are when you come across a merchant.',
-    image: "/Character_PNGs/tartaglia_genshin_impact_character_render_by_deg5270_deeqrac-pre.png",
+    image: "/Character_PNGs/jen.PNG",
+    background: "Background_PNGs/hospital_bed_night.jpg",
     options: [
       
       {
