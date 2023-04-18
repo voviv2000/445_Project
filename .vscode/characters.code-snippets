@@ -1,0 +1,119 @@
+{
+	// Place your 445_Project workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Wren": {
+		"prefix": ["wren"],
+		"body": ["'Character_PNGs/wren.PNG'"],
+	  },
+	"Jen": {
+		"prefix": ["jen"],
+		"body": ["'Character_PNGs/jen.PNG'"],
+	  },
+	  "Amria": {
+		"prefix": ["amria"],
+		"body": ["'Character_PNGs/amira.PNG'"],
+	  },
+	  "avery": {
+		"prefix": ["avery"],
+		"body": ["'Character_PNGs/avery.PNG'"],
+	  },
+	  "damien": {
+		"prefix": ["damien"],
+		"body": ["'Character_PNGs/damien.PNG'"],
+	  },
+	  "guinevere": {
+		"prefix": ["guinevere"],
+		"body": ["'Character_PNGs/guinevere.PNG'"],
+	  },
+	  "holland": {
+		"prefix": ["holland"],
+		"body": ["'Character_PNGs/holland.PNG'"],
+	  },
+	  "illa": {
+		"prefix": ["illa"],
+		"body": ["'Character_PNGs/illa.PNG'"],
+	  },
+	  "malik": {
+		"prefix": ["malik"],
+		"body": ["'Character_PNGs/malik.PNG'"],
+	  },
+	  "dclass": {
+		"prefix": ["dclass"],
+		"body": ["'Background_PNGs/dark_classroom.jpg'"],
+	  },
+	  "forensics": {
+		"prefix": ["foren"],
+		"body": ["'Background_PNGs/forensics_lab.jpeg'"],
+	  },
+	  "office": {
+		"prefix": ["office"],
+		"body": ["'Background_PNGs/office.jpg'"],
+	  },
+	  "stairwell": {
+		"prefix": ["stair"],
+		"body": ["'Background_PNGs/stairwell.jpg'"],
+	  },
+	  "bathroom": {
+		"prefix": ["bath"],
+		"body": ["'Background_PNGs/bathroom.jpg'"],
+	  },
+	  "dcourt": {
+		"prefix": ["dcourt"],
+		"body": ["'Background_PNGs/dark_basketball_court.jpg'"],
+	  },
+	  "dhall": {
+		"prefix": ["dhall"],
+		"body": ["'Background_PNGs/dark_hallway.jpg'"],
+	  },
+	  "gym": {
+		"prefix": ["gym"],
+		"body": ["'Background_PNGs/gym.png'"],
+	  },
+	  "night_h_bed": {
+		"prefix": ["nightbed"],
+		"body": ["'Background_PNGs/hospital_bed_night.jpg'"],
+	  },
+	  "h_bed": {
+		"prefix": ["h_bed"],
+		"body": ["'Background_PNGs/hospital.png'"],
+	  },
+	  "library": {
+		"prefix": ["library"],
+		"body": ["'Background_PNGs/library.jpg'"],
+	  },
+	  "moon_gym": {
+		"prefix": ["moon_gym"],
+		"body": ["'Background_PNGs/moonlight_gym.jpg'"],
+	  },
+	  "pool": {
+		"prefix": ["pool"],
+		"body": ["'Background_PNGs/pool.jpg'"],
+	  },
+	  "outside_bio_lab": {
+		"prefix": ["outbio"],
+		"body": ["'Background_PNGs/outside_bio_lab.jpeg'"],
+	  },
+	  "bio_lab": {
+		"prefix": ["bio_lab"],
+		"body": ["'Background_PNGs/bio_lab.webp'"],
+	  },
+	  "temp": {
+		"prefix": ["temp"],
+		"body": ["{\n  id: ,\n  text: ,\n  image: ,\n  background: ,\n  options: [\n    {\n      text: 'Continue',\n      nextText: \n    }\n  ]\n},\n"],
+	  },
+}
+// in file 'Code/User/snippets/javascript.json'
