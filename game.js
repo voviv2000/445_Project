@@ -100,7 +100,7 @@ const textNodes = [
     id: 2,
     speaker: 2,
     text: 'Its been a while since I’ve last walked these halls...',
-    image: "",
+    image: "Character_PNGs/blank.PNG",
     background: "Background_PNGs/stairwell.jpg",
     options: [
       
@@ -114,7 +114,7 @@ const textNodes = [
     id: 3,
     speaker: 2,
     text: 'Life has taken us all in different directions and I wonder how different everyone has become.',
-    image: "",
+    image: "Character_PNGs/blank.PNG",
     background: "Background_PNGs/stairwell.jpg",
     options: [
       
@@ -128,7 +128,7 @@ const textNodes = [
     id: 4,
     speaker: 1,
     text: 'Hey Wren! How have you been?',
-    image: "",
+    image: "Character_PNGs/blank.PNG",
     background: "Background_PNGs/cafeteria.jpg",
     options: [
       
@@ -638,7 +638,7 @@ const textNodes = [
   id: 41,
   speaker: 0,
   text: "As you approach the bio lab, you hear voices...",
-  image: 'Background_PNGs/outside_bio_lab.jpeg',
+  image: "Character_PNGs/blank.PNG",
   background: 'Background_PNGs/outside_bio_lab.jpeg',
   options: [
     {
