@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  text-align: center;
+  padding: 4% 0;
+}
+
+.container {
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 25px;
+  width: 600px;
+  height: 800px;
+  background-color: white;
+  padding: 20px;
+  padding-right: 40px;
+  box-shadow: 10px 10px 10px rgb(81, 6, 162);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#test {
+  width: 50%;
+}
+
+#speaker-key {
+  border: 1px solid black;
+  line-height: 50px;
+  border-radius: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+h1 {
+  text-decoration: underline;
+  padding-bottom: 45px;
+}
+
+#narration {
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+}
+
+#main-speak {
+  font-style: normal;
+  color: blue;
+}
+
+#main-think {
+  font-style: italic;
+  color: blue;
+}
+
+#other-chars {
+  font-style: normal;
+  color: black;
+}
+
+.press {
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: small;
+
+  text-shadow: 1px 1px 2px rgb(34, 3, 97);
+  letter-spacing: 0.2rem;
+  box-shadow: 5px 5px 5px rgb(49, 1, 97);
+}
