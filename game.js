@@ -1,8 +1,9 @@
-const textElement = document.getElementById('text')
-const imageElement = document.getElementById('character-image')
+const textElement = document.getElementById('text');
+const imageElement = document.getElementById('character-image');
 const optionButtonsElement = document.getElementById('option-buttons');
-const musicElement = document.getElementById('music')
-const backgroundElement = document.getElementById('background-image')
+const soundEffect = document.getElementById('soundEffect');
+const mainAudio = document.getElementById('playAudio');
+const backgroundElement = document.getElementById('background-image');
 
 
 let state = {}
@@ -14,6 +15,24 @@ function startGame() {
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+
+  if (textNode.id == 91) {
+    soundEffect.src = "Music/door_bang.mp3";
+  }
+  else if (textNode.id == 10){
+    soundEffect.src = "Music/woman_scream.mp3";
+  }
+  else if (textNode.id == 71){
+    soundEffect.src = "Music/jump_Scare.mp3";
+  }
+  else if (textNode.id == 67){
+    soundEffect.src = "Music/knife_sharpen.mp3";
+  }
+  else if (textNode.id == 79){
+    mainAudio.src = "";
+    soundEffect.src = "";
+  }
+  // need else if to end "playAudio" when player dies or wins 
   
   if (textNode.speaker == 0) {                // narration 
     textElement.style.fontStyle = "italic";
@@ -88,7 +107,7 @@ const textNodes = [
     
     background: "Background_PNGs/dark_classroom.jpg",
     image:"Character_PNGs/blank.PNG",
-    // music: "Music/apep.mp3", idk this isnt working yet kekw
+    //music: "Music/apep.mp3", //idk this isnt working yet kekw
     options: [
       {
         text: 'Continue',
@@ -1025,7 +1044,7 @@ const textNodes = [
   id: 70,
   speaker: 2,
   text: "Did he just... kill Illa???",
-  image: 'Character_PNGs/wren.PNG',
+  image: 'Character_PNGs/blank.PNG',
   background: 'Background_PNGs/outside_bio_lab.jpeg', // jumpscare idk lmao
   options: [
     {
@@ -1095,23 +1114,11 @@ const textNodes = [
   options: [
     {
       text: 'Continue',
-      nextText: 76
-    }
-  ]
-},
-{
-  id: 76,
-  /************/
-  text: "Saving this for potential wren with a knife lmfao",
-  image: 'Character_PNGs/wren.PNG',
-  background: 'Background_PNGs/outside_bio_lab.jpeg',
-  options: [
-    {
-      text: 'Continue',
       nextText: 77
     }
   ]
 },
+
 {
   id: 77,
   speaker: 3,
@@ -1134,16 +1141,30 @@ const textNodes = [
   options: [
     {
       text: 'Continue',
-      nextText: 79
+      nextText: 200
     }
   ]
 },
 {
+  id: 200,
+  speaker: 2,
+  text: "HNNG...Wha-",
+  image: "Character_PNGs/blank.PNG",
+  background:"Background_PNGs/red_screen.jpeg" ,
+  options: [
+    {
+      text: 'Continue',
+      nextText: 79
+    }
+  ]
+},
+
+{
   id: 79,
   speaker: 0,
   text: "Game over, you died.",
-  image: 'Character_PNGs/wren.PNG',
-  background: 'Background_PNGs/pool.jpg',
+  image: 'Character_PNGs/blank.PNG',
+  background: 'Background_PNGs/you_died.jpeg',
   options: [
     {
       text: 'Replay game?',
