@@ -68,6 +68,12 @@ body {
     height: 25%;
     position: absolute;
     bottom: 0;
+    display: flex;
+}
+
+#text {
+    font-style: italic bold;
+    padding: 10px;
 }
 
 .options-pane {
