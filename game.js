@@ -16,21 +16,29 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
 
-  if (textNode.id == 91) {
+  if (textNode.id == 1) {
+    mainAudio.src = "Music/mysterious-celesta-114064.mp3";
+    soundEffect.src = "";
+  }
+  else if (textNode.id == 91) {
     soundEffect.src = "Music/door_bang.mp3";
   }
-  else if (textNode.id == 10){
+  else if (textNode.id == 10 || textNode.id == 165 ){
     soundEffect.src = "Music/woman_scream.mp3";
   }
-  else if (textNode.id == 71){
+  else if (textNode.id == 71 || textNode.id == 164){
     soundEffect.src = "Music/jump_Scare.mp3";
   }
-  else if (textNode.id == 67){
+  else if (textNode.id == 67 || textNode.id == 200 || textNode.id == 160 || textNode.id == 166){
     soundEffect.src = "Music/knife_sharpen.mp3";
   }
   else if (textNode.id == 79){
+    mainAudio.src = "Music/lose.mp3";
+    soundEffect.src = "Music/jump_Scare.mp3";
+  }
+  else if (textNode.id == 1000 || textNode.id == 180) {
     mainAudio.src = "";
-    soundEffect.src = "";
+    soundEffect.src = "Music/win.mp3";
   }
   // need else if to end "playAudio" when player dies or wins 
   
@@ -1005,7 +1013,7 @@ const textNodes = [
   id: 67,
   speaker: 0,
   text: "a sickening squelch sound is heard from the bio lab",
-  image: 'Character_PNGs/illa.PNG',
+  image: 'Character_PNGs/blank.PNG',
   background: 'Background_PNGs/outside_bio_lab.jpeg',
   options: [
     {
@@ -2238,7 +2246,7 @@ const textNodes = [
   id: 160,
   speaker: 0,
   text: "A flash of red fills your eyes.",
-  image: 'Character_PNGs/wren.PNG',
+  image: 'Character_PNGs/blank.PNG',
   background: "Background_PNGs/red_screen.jpeg",
   options: [
     {
@@ -2265,7 +2273,7 @@ const textNodes = [
   speaker: 3,
   text: "Holland: Ughhh...",
   image: 'Character_PNGs/holland.PNG',
-  background: 'Background_PNGs/gym.png',
+  background: 'Background_PNGs/red_screen.jpeg',
   options: [
     {
       text: 'Continue',
@@ -2277,7 +2285,7 @@ const textNodes = [
   id: 163,
   speaker: 1,
   text: "You... you just... stabbed him?",
-  image: 'Character_PNGs/holland.PNG',
+  image: 'Character_PNGs/wren.PNG',
   background:'Background_PNGs/gym.png' ,
   options: [
     {
@@ -2330,7 +2338,7 @@ const textNodes = [
   speaker: 1,
   text:"No! Jen!" ,
   image: 'Character_PNGs/jen.PNG',
-  background:'Background_PNGs/gym.png' ,
+  background:'Background_PNGs/red_screen.jpeg' ,
   options: [
     {
       text: 'Continue',
@@ -2342,7 +2350,7 @@ const textNodes = [
   id: 168,
   speaker: 1,
   text: "Wren, how could you do this!",
-  image: 'Character_PNGs/jen.PNG',
+  image: 'Character_PNGs/wren.PNG',
   background:'Background_PNGs/gym.png' ,
   options: [
     {
@@ -2360,7 +2368,7 @@ const textNodes = [
   options: [
     {
       text: 'Continue',
-      nextText: 79
+      nextText: 200
     }
   ]
 },
