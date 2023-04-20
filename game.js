@@ -233,7 +233,7 @@ const textNodes = [
  ////////////////////////// START OF PLOT 3 / BODY DISCOVERY //////////////////////////////////////////////////////////////////////////////////////// 
  {
   id: 10,
-  speaker: 2,
+  speaker: 0,
   text: 'As you continue to catch up with everyone, you hear a scream in the distance...',
   image: 'Character_PNGs/illa.PNG',
   background: "Background_PNGs/cafeteria.jpg",
