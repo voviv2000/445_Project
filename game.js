@@ -383,7 +383,7 @@ const textNodes = [
 {
   id: 22,
   speaker: 1,
-  text: "Jen found Amira dead in the home ec room. I was about to in and check for myself but-",
+  text: "Jen found Amira dead in the home ec room. I was about to go in and check for myself but-",
   image: 'Character_PNGs/wren.PNG',
   background: 'Background_PNGs/dark_hallway.jpg',
   options: [
