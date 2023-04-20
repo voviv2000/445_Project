@@ -1381,8 +1381,8 @@ const textNodes = [
   id: 1000,
   speaker: 0,
   text: "In the end, it turned out Wren had managed to escape the school. After being on the run for a couple of days, the police were able to track him down and arrest him.",
-  image:'Character_PNGs/illa.PNG' ,
-  background: 'Background_PNGs/office.jpg',
+  image:'Character_PNGs/blank.PNG' ,
+  background: 'Background_PNGs/winning_end.png',
   options: [
     {
       text: 'Congratulations!, would you like to replay the game?',
@@ -2506,8 +2506,8 @@ const textNodes = [
   id: 180,
   speaker: 0,
   text: "As it turns out, Wren had discovered that Amira had been partially responsible for his sister’s death back in high school, and committed the crime in retaliation.",
-  image: 'Character_PNGs/wren.PNG',
-  background: 'Background_PNGs/moonlight_gym.jpg',
+  image: 'Character_PNGs/blank.PNG',
+  background: 'Background_PNGs/winning_end.png',
   options: [
     {
       text: 'Congratulations!, would you like to replay the game?',
